@@ -2,7 +2,7 @@
 
 # Demo
 
-Live Demo: http://localhost:3000/SImpleIPFS
+Live Demo: https://n-bhasin.github.io/SImpleIPFS/
 
 # Introduction
 
