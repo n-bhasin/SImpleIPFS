@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/SImpleIPFS/static/css/main.5f361e03.chunk.css",
+    "main.js": "/SImpleIPFS/static/js/main.7f8c4b22.chunk.js",
+    "main.js.map": "/SImpleIPFS/static/js/main.7f8c4b22.chunk.js.map",
+    "runtime-main.js": "/SImpleIPFS/static/js/runtime-main.d2ec8b2f.js",
+    "runtime-main.js.map": "/SImpleIPFS/static/js/runtime-main.d2ec8b2f.js.map",
+    "static/js/2.c4e90714.chunk.js": "/SImpleIPFS/static/js/2.c4e90714.chunk.js",
+    "static/js/2.c4e90714.chunk.js.map": "/SImpleIPFS/static/js/2.c4e90714.chunk.js.map",
+    "index.html": "/SImpleIPFS/index.html",
+    "precache-manifest.a809927b56c20c5b5af7eb1af4fa1cc5.js": "/SImpleIPFS/precache-manifest.a809927b56c20c5b5af7eb1af4fa1cc5.js",
+    "service-worker.js": "/SImpleIPFS/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/SImpleIPFS/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.c4e90714.chunk.js.LICENSE.txt": "/SImpleIPFS/static/js/2.c4e90714.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d2ec8b2f.js",
+    "static/js/2.c4e90714.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.7f8c4b22.chunk.js"
+  ]
+}
