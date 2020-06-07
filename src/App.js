@@ -5,7 +5,7 @@ const ipfsClient = require("ipfs-http-client");
 const ipfs = ipfsClient("https://ipfs.infura.io:5001");
 
 class App extends Component {
-  state = { storageValue: "", buffer: null };
+  state = { storageValue: "", buffer: null, loading: "" };
 
   captureFile = (event) => {
     event.preventDefault();
@@ -23,38 +23,60 @@ class App extends Component {
 
   onSubmit = async (event) => {
     event.preventDefault();
-    const ipfsVersion = await ipfs.version();
-    console.log(ipfsVersion);
 
     console.log("Submitting the File...");
+
+    this.setState({ loading: "Please wait while image is uploading....." });
+
     var hash = "";
     for await (const result of ipfs.add(this.state.buffer)) {
       console.log(result);
       hash = result.path;
     }
     console.log("IPFS Hash: ", hash);
-    this.setState({ storageValue: hash });
+    this.setState({ storageValue: hash, loading: "" });
   };
   render() {
     return (
-      <div className="Container-fluid">
-        <nav>IPFS File Upload</nav>
+      <div className="Container">
+        <nav className="navbar navbar-light bg-light">
+          <h1 className="navbar-brand mb-0 h1 text-center">IPFS File Upload</h1>
+        </nav>
+        <main role="main" className="inner cover mx-sm-3 mb-2 ">
+          {this.state.storageValue !== "" ? (
+            <img
+              src={`https://ipfs.io/ipfs/${this.state.storageValue}`}
+              alt="No-images"
+            />
+          ) : (
+            <i>There is no image</i>
+          )}
+          <p>{this.state.loading === "" ? "" : this.state.loading}</p>
 
-        <p>This Image is stored using IPFS</p>
-        {this.state.storageValue === "" ? (
-          "There is no image"
-        ) : (
-          <img
-            src={`https://ipfs.io/ipfs/${this.state.storageValue}`}
-            alt="No-images"
-          />
-        )}
-
-        <form onSubmit={this.onSubmit}>
-          <input type="file" onChange={this.captureFile} />
-          <input type="submit" />
-        </form>
-        <p>This is image hash: {this.state.storageValue}</p>
+          <div className="card">
+            <div className="card-body">
+              <form onSubmit={this.onSubmit} className="form-inline mTop">
+                <input
+                  type="file"
+                  className="form-control no-border"
+                  onChange={this.captureFile}
+                />
+                <input
+                  type="submit"
+                  className="btn mx-sm-3 btn-primary bnt-sm form-control"
+                />
+              </form>
+              <p>
+                This is image hash:{" "}
+                {this.state.storageValue === "" ? (
+                  <i>Please Upload the image to see the hash</i>
+                ) : (
+                  this.state.storageValue
+                )}
+              </p>
+            </div>
+          </div>
+        </main>
       </div>
     );
   }

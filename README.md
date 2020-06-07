@@ -1,5 +1,9 @@
 # SIMPLE IMAGE UPLOADE USING IPFS
 
+# Demo
+
+Live Demo: http://localhost:3000/SImpleIPFS
+
 # Introduction
 
 Implementing the image uploader in react using the IPFS api.
