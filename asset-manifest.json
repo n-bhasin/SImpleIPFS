@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/SImpleIPFS/static/css/main.76a030ad.chunk.css",
-    "main.js": "/SImpleIPFS/static/js/main.2d61e1d4.chunk.js",
-    "main.js.map": "/SImpleIPFS/static/js/main.2d61e1d4.chunk.js.map",
+    "main.js": "/SImpleIPFS/static/js/main.df77df3d.chunk.js",
+    "main.js.map": "/SImpleIPFS/static/js/main.df77df3d.chunk.js.map",
     "runtime-main.js": "/SImpleIPFS/static/js/runtime-main.c2a1eaad.js",
     "runtime-main.js.map": "/SImpleIPFS/static/js/runtime-main.c2a1eaad.js.map",
     "static/css/2.829c9cb5.chunk.css": "/SImpleIPFS/static/css/2.829c9cb5.chunk.css",
     "static/js/2.5d4fe454.chunk.js": "/SImpleIPFS/static/js/2.5d4fe454.chunk.js",
     "static/js/2.5d4fe454.chunk.js.map": "/SImpleIPFS/static/js/2.5d4fe454.chunk.js.map",
     "index.html": "/SImpleIPFS/index.html",
-    "precache-manifest.6067c8a31340e41a761cf798b1b9b71c.js": "/SImpleIPFS/precache-manifest.6067c8a31340e41a761cf798b1b9b71c.js",
+    "precache-manifest.934ff3750778ae14abd74d14ef08f968.js": "/SImpleIPFS/precache-manifest.934ff3750778ae14abd74d14ef08f968.js",
     "service-worker.js": "/SImpleIPFS/service-worker.js",
     "static/css/2.829c9cb5.chunk.css.map": "/SImpleIPFS/static/css/2.829c9cb5.chunk.css.map",
     "static/css/main.76a030ad.chunk.css.map": "/SImpleIPFS/static/css/main.76a030ad.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.829c9cb5.chunk.css",
     "static/js/2.5d4fe454.chunk.js",
     "static/css/main.76a030ad.chunk.css",
-    "static/js/main.2d61e1d4.chunk.js"
+    "static/js/main.df77df3d.chunk.js"
   ]
 }
