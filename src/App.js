@@ -5,7 +5,11 @@ const ipfsClient = require("ipfs-http-client");
 const ipfs = ipfsClient("https://ipfs.infura.io:5001");
 
 class App extends Component {
-  state = { storageValue: "", buffer: null, loading: "" };
+  state = {
+    storageValue: "QmcXuxHuHrZipKyqumdgs9q39cAGHvGZBuUHdVwGZK1vzU",
+    buffer: null,
+    loading: "",
+  };
 
   captureFile = (event) => {
     event.preventDefault();
